@@ -1,21 +1,21 @@
-package org.example;
+package org.example.constants;
 
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 
-public class Constant {
+public class YamlConstant {
     private String key;
     private Number value;
     private boolean tunable = false;
 
-    public Constant() {
+    public YamlConstant() {
     }
 
-    public Constant(String key, Number value) {
+    public YamlConstant(String key, Number value) {
         this.key = key;
         this.value = value;
     }
 
-    public Constant(String key, Number value, boolean tunable) {
+    public YamlConstant(String key, Number value, boolean tunable) {
         this.key = key;
         this.value = value;
         this.tunable = tunable;

@@ -1,13 +1,13 @@
 ---
-  SwerveDrive:
-    - kI:
-      value: 1
-      tunable: false
-    - kD: 5
-    - key: name
-      value: 6
-    - name:
-      value: 7
-    - kP:
-      value: 8
-      tunable: true
+SwerveDrive:
+  - kI:
+    value: 1
+    tunable: false
+  - kD: 5
+  - key: name
+    value: 6
+  - kP:
+    value: 8
+    tunable: true
+SwerveModule:
+  - zeroPosition: 8

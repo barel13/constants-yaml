@@ -79,12 +79,11 @@ dependencies {
     nativeRelease wpi.java.vendor.jniRelease(wpi.platforms.desktop)
     simulationRelease wpi.sim.enableRelease()
 
-    annotationProcessor project(":utils")
-    implementation project(":utils")
-
-}
-tasks.withType(JavaCompile) {
-    options.sourcepath = sourceSets.main.resources.getSourceDirectories()
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.0'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
+    annotationProcessor group: 'com.google.auto.service', name: 'auto-service', version: '1.0.1'
+    implementation group: 'com.google.auto.service', name: 'auto-service', version: '1.0.1'
 }
 
 test {
@@ -108,3 +107,4 @@ jar {
 deployArtifact.jarTask = jar
 wpi.java.configureExecutableTasks(jar)
 wpi.java.configureTestTasks(test)
+

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.constants;
 
 /**
  * A wrapper class to the constant, that is being used to return the value in the competition.
@@ -6,7 +6,7 @@ package org.example;
 public class WrapperConstant implements WebConstant {
     private double defaultValue;
 
-    WrapperConstant(double defaultValue) {
+    public WrapperConstant(double defaultValue) {
         this.defaultValue = defaultValue;
     }
 
